@@ -1,18 +1,24 @@
 'use strict';
 
+// Define the paths and the partials (templates).
+var Pages = {
+  '/':        'main.html',
+  '/about':   'about.html',
+  '/contact': 'contact.html',
+};
+
+// Where do all these partials live?
+var TemplatePrefix = 'views/';
+
+// Create Angular application module
 angular.module('angularjsSimpleWebsiteApp', ['ngRoute'])
 
   .config(function ($routeProvider) {
+    for ( var path in Pages ) {
+      var template = Pages[path];
+      $routeProvider.when( path, {templateUrl: TemplatePrefix + template});
+    }
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-      })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-      })
       .otherwise({
         redirectTo: '/'
       });
