@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="styles/bootstrap.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+</head>
+  <body ng-app="angularjsSimpleWebsiteApp" class='container'>
+
+    <!-- header -->
+    <div class="header" title='this header comes from index.html'>
+      <ul class="nav nav-pills pull-right">
+        <li ng-class="{active: (path=='/')}" 
+            ><a href="#">Home</a></li>
+        <li ng-class="{active: (path=='/about')}"
+            ><a href="#/about">About</a></li>
+        <li ng-class="{active: (path=='/contact')}"
+            ><a href="#/contact">Contact</a></li>
+      </ul>
+      <h3 class="text-muted">angularjs simple website</h3>
+    </div>
+
+    <!-- Add your site or application content here -->
+    <div ng-view=""></div>
+
+    <div class="footer" title='the footer comes from index.html'>
+      <p>the common footer</p>
+    </div>
+
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="scripts/app.js"></script>
+<!--
+    <script src="scripts/controllers/main.js"></script>
+-->
+
+</body>
+</html>
