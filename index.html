@@ -2,22 +2,19 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>demo site for an angularjs simple website</title>
     <meta name="description" content="">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css({.tmp,app}) styles/main.css -->
-        <link rel="stylesheet" href="styles/bootstrap.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <script src="scripts/pages.js"></script>
 
-</head>
+  </head>
   <body ng-app="angularjsSimpleWebsiteApp" class='container'>
 
     <!-- header -->
-    <div class="header" title='this header comes from index.html'>
+    <div class="header" title='comes from index.html'>
       <ul class="nav nav-pills pull-right">
         <li ng-class="{active: (path=='/')}" 
             ><a href="#">Home</a></li>
@@ -26,26 +23,27 @@
         <li ng-class="{active: (path=='/contact')}"
             ><a href="#/contact">Contact</a></li>
       </ul>
-      <h3 class="text-muted">angularjs simple website</h3>
+      <h3 class="text-muted">website title</h3>
     </div>
 
     <!-- Add your site or application content here -->
-    <div ng-view=""></div>
+    <div ng-view="">
+        <p title='comes from index.html'
+            >This paragraph will be removed as soon as the angularjs app
+            is initialized. It may be a good idea to put a spinner image
+            here.</p>
+    </div>
 
-    <div class="footer" title='the footer comes from index.html'>
+    <div class="footer" title='comes from index.html'>
       <p>the common footer</p>
     </div>
 
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-
     <script src="bower_components/angular-route/angular-route.js"></script>
 
     <script src="scripts/app.js"></script>
-<!--
-    <script src="scripts/controllers/main.js"></script>
--->
 
 </body>
 </html>
