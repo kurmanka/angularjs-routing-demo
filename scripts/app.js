@@ -1,23 +1,19 @@
 'use strict';
 
-// Define the paths and the partials (templates).
-var Pages = {
-  '/':        'main.html',
-  '/about':   'about.html',
-  '/contact': 'contact.html',
-};
-
-// Where do all these partials live?
-var TemplatePrefix = 'views/';
+/* see http://www.jshint.com/docs/ if you want to know what this is: */
+/* global Pages */
+/* global TemplatePrefix */
 
 // Create Angular application module
 angular.module('angularjsSimpleWebsiteApp', ['ngRoute'])
 
   .config(function ($routeProvider) {
+    // register the routes and the templates
     for ( var path in Pages ) {
       var template = Pages[path];
       $routeProvider.when( path, {templateUrl: TemplatePrefix + template});
     }
+    // the default route
     $routeProvider
       .otherwise({
         redirectTo: '/'
