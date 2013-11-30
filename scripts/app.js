@@ -10,7 +10,7 @@ angular.module('angularjsSimpleWebsiteApp', ['ngRoute'])
   .config(function ($routeProvider) {
     // register the routes and the templates
     for ( var path in Pages ) {
-      var template = Pages[path];
+      var template = Pages[path][0];
       $routeProvider.when( path, {templateUrl: TemplatePrefix + template});
     }
     // the default route

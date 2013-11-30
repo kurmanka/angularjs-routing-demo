@@ -2,9 +2,9 @@
 
 // Define the paths and the partials (templates).
 var Pages = {
-  '/':        'main.html',
-  '/about':   'about.html',
-  '/contact': 'contact.html',
+  '/':        ['main.html',    'Home'],
+  '/about':   ['about.html',   'About'],
+  '/contact': ['contact.html', 'Contact'],
 };
 
 // Where do all these partials live?
