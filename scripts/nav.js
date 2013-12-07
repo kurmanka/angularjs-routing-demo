@@ -1,7 +1,15 @@
 'use strict';
 
+/*
+   This piece uses jQuery to create the navigation 
+   links in the page header, with the needed angular 
+   directives in them. This is to make the right link
+   highlighted at each route.
+*/
+
 /* global $ */
 /* global Pages */
+
 
 $(function(){
     // Create a navigation item (a link) for each page.

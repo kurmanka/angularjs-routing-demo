@@ -23,12 +23,36 @@ Additionally, the demo uses Twitter Bootstrap for CSS styles.
  * http://getbootstrap.com/
 
 
+## How to see it?
+
+Put the files into a web-accessible directory, and open the 
+index.html file.
+
+
+## How to use it?
+
+This demo may serve as a step on the path of getting to know 
+AngularJS. Angular has many powerful features, while this 
+little demo only uses 2 or 3 of them. But it can show to make
+a nice mini-site.
+
+If you want to understand, how it works, here are the main files 
+you should look at:
+
+ * index.html -- the master html and the wrapper-template for the pages
+ * scripts/pages.js -- lists the navigation items
+ * scripts/nav.js -- creates the navigation links in the page header.
+ * scripts/app.js -- initializes the Angular App & configures it
+ * views/main.html and other html files in the views/ folder -- the 
+   partials, the page content.
+
 
 ## Credits
 
 I've used yeoman and bower to produce this demo.
 
  * Yeoman http://yeoman.io
+ * Yeoman generator for AngularJS https://github.com/yeoman/generator-angular
  * Bower https://github.com/bower/bower
 
 (Both are great tools that I recommend.)
