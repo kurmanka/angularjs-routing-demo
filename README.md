@@ -11,7 +11,7 @@ It demonstrates the use of the Angular Routes.
  * AngularJS ngRoute module: http://docs.angularjs.org/api/ngRoute
  * ngView directive: http://docs.angularjs.org/api/ngRoute.directive:ngView
 
-Also, the site demonstrates one way to make the current page 
+Also, the site demonstrates one way to make the current page's
 link highlighted in the navigation. This is done via ng-class
 directive of Angular. (Probably not the most elegant way to 
 implement this.)
@@ -26,22 +26,22 @@ Additionally, the demo uses Twitter Bootstrap for CSS styles.
 ## How to see it?
 
 Put the files into a web-accessible directory, and open the 
-index.html file.
+index.html file in your browser.
 
 
 ## How to use it?
 
 This demo may serve as a step on the path of getting to know 
 AngularJS. Angular has many powerful features, while this 
-little demo only uses 2 or 3 of them. But it can show to make
-a nice mini-site.
+little demo only uses 2 or 3 of them. But it can show, how to 
+make a nice mini-site, that is potentially useful.
 
-If you want to understand, how it works, here are the main files 
+If you want to understand how it works, here are the main files 
 you should look at:
 
  * index.html -- the master html and the wrapper-template for the pages
- * scripts/pages.js -- lists the navigation items
- * scripts/nav.js -- creates the navigation links in the page header.
+ * scripts/pages.js -- lists the navigation items, the pages and the link names  
+ * scripts/nav.js -- creates the navigation links in the page header
  * scripts/app.js -- initializes the Angular App & configures it
  * views/main.html and other html files in the views/ folder -- the 
    partials, the page content.

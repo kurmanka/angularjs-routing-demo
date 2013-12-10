@@ -1,6 +1,6 @@
 /* jshint unused: false */
 
-// Define the paths and the partials (templates).
+// Define the paths and the partials (page templates).
 var Pages = {
   '/':        ['main.html',    'Home'],
   '/about':   ['about.html',   'About'],

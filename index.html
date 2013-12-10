@@ -14,8 +14,12 @@
   <body ng-app="angularjsSimpleWebsiteApp" class='container'>
 
     <!-- header -->
-    <div class="header" title='comes from index.html'>
+    <!-- uses NavigationLinks as a controller -->
+    <div class="header" title='comes from index.html' 
+         ng-controller='NavigationLinks'>
       <ul class="nav nav-pills pull-right">
+        <!-- this is empty at start, but nav.js will create 
+             items in this list later. -->
       </ul>
       <h3 class="text-muted">website title</h3>
     </div>
