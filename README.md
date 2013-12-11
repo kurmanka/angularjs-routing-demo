@@ -23,7 +23,7 @@ Additionally, the demo uses Twitter Bootstrap for CSS styles.
  * http://getbootstrap.com/
 
 
-## How to see it?
+## How to run it?
 
 Put the files into a web-accessible directory, and open the 
 index.html file in your browser.
@@ -45,6 +45,9 @@ you should look at:
  * scripts/app.js -- initializes the Angular App & configures it
  * views/main.html and other html files in the views/ folder -- the 
    partials, the page content.
+
+I've put a lot of comments into these files, to make them
+easy to understand.
 
 
 ## Credits
