@@ -10,7 +10,14 @@
     <link rel="stylesheet" href="styles/main.css">
 
     <!-- navigation configuration (the list of links) -->
-    <script src="scripts/pages.js"></script>
+    <script type='text/javascript'>
+// Define the paths, the partials (page templates) and the link names.
+var Pages = {
+  '/':        ['main.html',    'Home'],
+  '/about':   ['about.html',   'About'],
+  '/contact': ['contact.html', 'Contact'],
+};
+    </script>
 
   </head>
   <body ng-app="angularjsSimpleWebsiteApp" class='container'>

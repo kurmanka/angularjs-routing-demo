@@ -1,10 +1,12 @@
 'use strict';
 
 /*
-   This piece uses jQuery to create the navigation links 
-   (list items) in the page header, with the needed angular 
-   directives in them. This is to make the right link
-   highlighted at each route.
+
+   This piece uses jQuery and the Pages variable (defined in index.html) to
+   create the navigation links (list items) in the page header, with the
+   needed angular directives in them. The directives are to make the right 
+   link highlighted at each route.
+
 */
 
 /* global $ */

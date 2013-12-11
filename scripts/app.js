@@ -2,11 +2,14 @@
 
 /* see http://www.jshint.com/docs/ if you want to know what this is: */
 /* global Pages */
-/* global TemplatePrefix */
+
+// Where do all these partials live?
+var TemplatePrefix = 'views/';
 
 // Create Angular application module angularjsSimpleWebsiteApp.
 // Declare ngRoute as a dependency. http://docs.angularjs.org/api/ngRoute
 // Then configure the $routeProvider by defining the routes.
+
 angular.module('angularjsSimpleWebsiteApp', ['ngRoute'])
 
   .config(function ($routeProvider) {
