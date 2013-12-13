@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>demo site for an angularjs simple website</title>
+    <title>demo for an angularjs simple website</title>
     <meta name="description" content="">
 
     <!-- twitter bootstrap and additional styles -->
@@ -30,7 +30,7 @@ var Pages = {
         <!-- this is empty at start, but nav.js will create 
              items in this list later. -->
       </ul>
-      <h3 class="text-muted">Project name</h3>
+      <h3 class="text-muted">AngularJS Website Demo</h3>
     </div>
 
     <!-- Your site or application content will appear here -->
@@ -48,9 +48,12 @@ var Pages = {
 
     </div>
 
+    <!-- the footer -->
     <div class="footer" title='comes from index.html'>
-      <p>the common footer 
+      <p>
+        <a href='http://ahinea.com/en/demo/angularjs-simple-website/'>demo permanent link</a>
         - <a href='https://github.com/kurmanka/angularjs-routing-demo/'>github</a>
+        - <a href='http://ahinea.com/en/'>author</a>
       </p>
     </div>
 
@@ -67,6 +70,24 @@ var Pages = {
 
     <!-- the main angular app code -->
     <script src="scripts/app.js"></script>
+
+
+    <!-- GA tracking code -->
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-923636-1']);
+    _gaq.push(['_setDomainName', 'ahinea.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
+
 
 </body>
 </html>
