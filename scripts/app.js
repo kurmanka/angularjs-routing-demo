@@ -31,6 +31,18 @@ angular.module('angularjsSimpleWebsiteApp', ['ngRoute'])
 
 // The NavigationLinks controller.
 function NavigationLinks( $scope, $location ) {
+
+  // here we use the Pages object, that is created in the
+  // index.html. It defines the links and their names.
+  // Links, title and class are members of this controller's scope.
+  // they are used in the index.html.
+  $scope.Links = Object.keys(Pages);
+  $scope.title = function(i) { return Pages[i][1]; };
+  $scope.class = function(i) {
+    if (i === $scope.locationPath) { return 'active'; }
+    else { return ''; }
+  };
+
   // $routeChangeSuccess is an event that is fired,
   // when the app has switched from one route to another.
   // http://docs.angularjs.org/api/ngRoute.$route
@@ -41,4 +53,5 @@ function NavigationLinks( $scope, $location ) {
       console.log('locationPath: ' + $location.path() );
     }
   );
+
 }

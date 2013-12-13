@@ -27,8 +27,11 @@ var Pages = {
     <div class="header" title='comes from index.html'>
       <ul class="nav nav-pills pull-right" 
           ng-controller='NavigationLinks'>
-        <!-- this is empty at start, but nav.js will create 
-             items in this list later. -->
+          <!-- look at the NavigationLinks controller-function in app.js
+               to undestand what are Links, class() and title(). -->
+          <li ng-repeat='item in Links' ng-class='class(item)'>
+            <a ng-href='#{{item}}' ng-bind='title(item)'></a>
+          </li>
       </ul>
       <h3 class="text-muted">Project name</h3>
     </div>
@@ -56,10 +59,6 @@ var Pages = {
 
 
     <script src="bower_components/jquery/jquery.js"></script>
-
-    <!-- nav.js is needed to generate link items in the ul.nav
-         at the page header. -->
-    <script src="scripts/nav.js"></script>
   
     <!-- the angular core and the ngRoute module --> 
     <script src="bower_components/angular/angular.js"></script>
