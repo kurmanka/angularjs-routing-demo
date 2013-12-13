@@ -1,0 +1,4 @@
+.buildignore
+.history
+.htaccess
+.DS_Store
