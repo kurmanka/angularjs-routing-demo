@@ -23,10 +23,13 @@ Additionally, the demo uses Twitter Bootstrap for CSS styles.
  * http://getbootstrap.com/
 
 
-## How to run it?
+## How to see it in action?
 
 Put the files into a web-accessible directory, and open the 
 index.html file in your browser.
+
+Or [see it online](http://ahinea.com/en/demo/angularjs-simple-website/), 
+a slightly customized version.
 
 
 ## How to use it?
