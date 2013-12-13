@@ -43,8 +43,8 @@ you should look at:
    Also, it defines the global Pages variable which lists the navigation items, 
    the page URLs and the link names.
  * scripts/nav.js -- creates the navigation links in the page header based on 
-   the Pages variable
- * scripts/app.js -- initializes the Angular App & configures it
+   the Pages variable.
+ * scripts/app.js -- initializes the Angular App & configures it.
  * views/main.html and other html files in the views/ folder -- the 
    partials, the page content.
 
