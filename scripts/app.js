@@ -36,6 +36,8 @@ function NavigationLinks( $scope, $location ) {
   // index.html. It defines the links and their names.
   // Links, title and class are members of this controller's scope.
   // they are used in the index.html.
+
+  console.log('NavigationLinks controller init');
   $scope.Links = Object.keys(Pages);
   $scope.title = function(i) { return Pages[i][1]; };
   $scope.class = function(i) {
