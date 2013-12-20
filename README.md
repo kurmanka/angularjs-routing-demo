@@ -55,6 +55,16 @@ I've put a lot of comments into these files, to make them
 easy to understand.
 
 
+## See also
+
+ * UI-Router
+    * https://github.com/angular-ui/ui-router
+    * http://angular-ui.github.io/ui-router/sample/ 
+    * https://github.com/angular-ui/ui-router/tree/master/sample (demo)
+ * Ben Nadel's work
+    * http://www.bennadel.com/blog/2441-Nested-Views-Routing-And-Deep-Linking-With-AngularJS.htm
+    * http://bennadel.github.io/AngularJS-Routing/ (demo)
+
 ## Credits
 
 I've used yeoman and bower to produce this demo.
